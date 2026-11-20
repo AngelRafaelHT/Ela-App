@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis tareas</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Mis tareas</h1>
+    <form id="form-tarea">
+      <input id="titulo" placeholder="¿Qué tienes que hacer?" maxlength="100" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <p id="error" class="error"></p>
+
+    <div class="filtros">
+      <button type="button" data-filtro="" class="activo">Todas</button>
+      <button type="button" data-filtro="pendientes">Pendientes</button>
+      <button type="button" data-filtro="completadas">Completadas</button>
+    </div>
+
+    <ul id="lista"></ul>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
